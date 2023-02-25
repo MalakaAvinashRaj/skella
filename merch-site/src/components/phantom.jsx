@@ -7,7 +7,7 @@ import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adap
 
 require('@solana/wallet-adapter-react-ui/styles.css');
 
-export function Phantom() {
+export function Phantom(props) {
 
     const network = WalletAdapterNetwork.Devnet;
     const endpoint = clusterApiUrl(network);
@@ -22,12 +22,8 @@ export function Phantom() {
             <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets} autoConnect>
                 <WalletModalProvider>
-                <Layout>
-                    <Head>
-                    <title>Cookies Inc</title>
-                    </Head>
-                    <Component {...pageProps} />
-                </Layout>
+                    <h4>Cookies Inc</h4>
+                    <p>{props}</p>
                 </WalletModalProvider>
             </WalletProvider>
             </ConnectionProvider>
