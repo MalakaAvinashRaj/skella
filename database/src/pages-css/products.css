@@ -1,0 +1,24 @@
+.products {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-container {
+    display: flex;
+}
+
+.single-product {
+    border: 1px solid #666464;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.buttons {
+    margin: 5px;
+    
+}

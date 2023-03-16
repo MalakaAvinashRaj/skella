@@ -1,6 +1,6 @@
 
 
-export function Home() {
+export function homePage() {
     return(
         <div className="container">
             <h4>Home page</h4>
@@ -9,4 +9,4 @@ export function Home() {
 
 }
 
-export default Home;
+export default homePage;

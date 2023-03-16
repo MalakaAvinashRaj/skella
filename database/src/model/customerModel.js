@@ -10,7 +10,7 @@ const customerSchema = new Schema({
         type: String,
         required: true
     },
-    Mobile: {
+    mobile: {
         type: Number,
     },
     address: {
@@ -26,4 +26,4 @@ const customerSchema = new Schema({
 
 const myDB = mongoose.connection.useDb('merch');
 
-module.exports = myDB.model('customer', customerSchema);
+module.exports = myDB.model('customers', customerSchema);
