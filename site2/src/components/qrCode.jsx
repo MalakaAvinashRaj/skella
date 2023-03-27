@@ -61,17 +61,6 @@ export function QrCode() {
                 },
                 'finalized');
                 
-                // await validateTransfer(
-                //     connection,
-                //     signatureInfo.signature,
-                //     {
-                //         recipient: shopAddress,
-                //         amount,
-                //         reference,
-                //     },
-                //     { commitment: "confirmed" }
-                // );
-                
                 setPayments(true);
                 
                 // router.push("/shop/confirmed");
@@ -98,6 +87,7 @@ export function QrCode() {
 
     }, [amount]);
 
+
     return (
         
         <div className="flex flex-col items-center gap-8">
@@ -107,7 +97,7 @@ export function QrCode() {
                 onChange={(e) => setInputAmount(e.target.value)}
             />
             <p>Checkout: {inputAmount}Sol</p>
-            {payments ? <h1>Paymen successful</h1> : <div ref={qrRef} />}
+            {payments ? <h1>Payment successful</h1> : <div ref={qrRef} />}
         </div>
     );
 }
