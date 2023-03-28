@@ -166,12 +166,9 @@ export function Phantom() {
       </div>
 
       {wallet === null ? <p>Wallet not connected</p> : <p>connected to {wallet.substring(0, 4) + "...." + wallet.substr(wallet.length - 4, wallet.length)}</p>}
+
       {(status === "started" ? <p>Transaction Started</p> : null) || (status === "success" ? <p>Transaction Successfull</p> : null) || (status === "waiting" ? <p>Waiting for conformation...</p> : null) || (status === "failed" ? <p>Transaction Failed</p> : null)
       }
-      {/* {status === "started" ? <p>Transaction Started</p> : null}
-      {status === "success" ? <p>Transaction Successfull</p> : null}
-      {status === "waiting" ? <p>Waiting for conformation...</p> : null}
-      {status === "failed" ? <p>Transaction Failed</p> : null} */}
 
     </div>
   );
